@@ -31,23 +31,7 @@ const Navbar = () => {
             {authenticated && <NavLink to="/write">Write</NavLink>}
           </div>
         </div>
-        <div>
-          {authenticated ? (
-            <button
-              onClick={logout}
-              className="bg-white text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-blue-100 transition duration-300"
-            >
-              Logout
-            </button>
-          ) : (
-            <button
-              onClick={login}
-              className="bg-white text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-blue-100 transition duration-300"
-            >
-              Login
-            </button>
-          )}
-        </div>
+        {/* <div>  */}
       </div>
     </nav>
   );
